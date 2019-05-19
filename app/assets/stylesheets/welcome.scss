@@ -1,0 +1,117 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* UKLAD STRONY */
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccc;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(255,166,0,1) 30%, rgba(255,166,0,1) 100%);
+    height: 10vh;
+    flex-basis: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+header {
+    display: flex;
+    position: relative;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 40vh;
+    background-image: url(/app/assets/images/header-foto.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 10vh;
+}
+
+.header-wrapper {
+    display: flex;
+    position: relative;
+    flex-basis: 100%;
+    justify-content: center;
+    height: 40vh;
+    background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 64%, rgba(0,0,0,1) 64%, rgba(0,0,0,1) 100%);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.4;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: gray;
+    height: 100vh;
+    flex-basis: 100%;
+}
+
+footer {
+    display: flex;
+    flex-basis: 100%;
+    height: 10vh;
+    background-color: #999ccc;
+    justify-content: center;
+}
+/* UKLAD STRONY */
+
+.logo {
+    margin-left: 10px;
+    color: white;
+    background-color: #000;
+}
+
+.navbar {
+    margin-right: 10px;
+}
+
+.header-text {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;;
+    text-align: right;
+    z-index: 1;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #434343;
+    height: 50vh;
+}
+
+.buttons a {
+    display: flex;
+    flex-basis: 51%;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 42px;
+    text-decoration: none;
+}
