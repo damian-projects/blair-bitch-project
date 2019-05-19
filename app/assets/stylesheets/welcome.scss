@@ -12,6 +12,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: #ccc;
+    min-width: 400px;
 }
 
 .container {
@@ -107,15 +108,27 @@ footer {
     height: 50vh;
 }
 
-.buttons a {
+.button-style {
     display: flex;
-    flex-basis: 51%;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-around;
+}
+
+.button-style a {
+    display: flex;
     justify-content: center;
+    border: 2px solid black;
     background-color: black;
+    transform: skew(-30deg);
     color: white;
     font-size: 42px;
     text-decoration: none;
     padding: 12px;
+    height: 42px;
+    span {
+        transform: skew(30deg);
+    }
 }
 
 #hamburger-menu-icon {
