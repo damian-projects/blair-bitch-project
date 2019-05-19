@@ -41,7 +41,7 @@ header {
     flex-basis: 100%;
     justify-content: center;
     height: 40vh;
-    background-image: url(/app/assets/images/header-foto.jpg);
+    background-image: asset_url("header-foto.jpg");
     background-size: cover;
     background-position: center;
     margin-top: 10vh;
@@ -78,13 +78,14 @@ footer {
 /* UKLAD STRONY */
 
 .logo {
-    margin-left: 10px;
-    color: white;
-    background-color: #000;
+    margin-left: 20px;
+    color: black;
+    background-color: white;
+    font-size: 24px;
 }
 
 .navbar {
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 .header-text {
@@ -114,4 +115,9 @@ footer {
     color: white;
     font-size: 42px;
     text-decoration: none;
+    padding: 12px;
+}
+
+#hamburger-menu-icon {
+    height: 3rem;
 }
