@@ -14,9 +14,9 @@
   <body>
   <div class="container">
       <nav>
-          <div class="logo">logo</div>
+          <div class="logo">LOGO</div>
           <div class="navbar">
-              navbar
+            <a href="#"><%= image_tag("menu-button.svg", :alt => "hamburger-menu", :id => "hamburger-menu-icon") %></a>
           </div>
       </nav>
       <header>
@@ -35,13 +35,14 @@
           </div>
           <div class="announcement">
               Ogloszenia
+              <%= link_to 'Ogloszenia', controller: 'announcements' %>
           </div>
       </section>
       <footer>
           stopka
       </footer>
   </div>
-  
-</body> 
+
+</body>
 </body>
 </html>
