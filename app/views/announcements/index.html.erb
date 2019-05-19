@@ -1,0 +1,23 @@
+<h1>Wszystkie ogłoszenia</h1>
+
+<%= link_to 'Nowe ogłoszenie', new_announcement_path %>
+
+<table>
+  <tr>
+    <th>Auto</th>
+    <th>Opis</th>
+    <th></th>
+  </tr>
+
+  <% @announcements.each do |announcement| %>
+    <tr>
+      <td><%= announcement.car %></td>
+      <td><%= announcement.description %></td>
+      <td><%= link_to 'Pokaż', announcement_path(announcement) %></td>
+      <td><%= link_to 'Edytuj', edit_announcement_path(announcement) %></td>
+      <td><%= link_to 'Usuń', announcement_path(announcement),
+              method: :delete,
+              data: { confirm: 'Czy aby na pewno?' } %></td>
+    </tr>
+  <% end %>
+</table>

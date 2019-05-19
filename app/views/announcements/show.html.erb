@@ -1,0 +1,12 @@
+<p>
+  <strong>Auto:</strong>
+  <%= @announcement.car %>
+</p>
+
+<p>
+  <strong>Opis:</strong>
+  <%= @announcement.description %>
+</p>
+
+<%= link_to 'Edytuj', edit_announcement_path(@announcement) %> |
+<%= link_to 'Wróć', announcements_path %>
