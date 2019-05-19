@@ -1,2 +1,52 @@
-<h1>Obszan</h1>
-<p>nakurwiaj html tutaj: app/views/welcome/index.html.erb</p>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Test</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+        <img id="header-img" src="/blair-bitch-project/app/assets/images/header-photo-bw.jpg" alt="header">
+        <nav>
+            <div class="navbar">
+                <a href="#kontakt">kontakt</a>
+                <a href="#realizacje">realizacje</a>
+                <a href="#oferta">oferta</a>
+                <a href="#glowna">główna</a>
+            </div>
+        </nav>
+        <div class="header-content">
+            <img id="header-logo" src="/blair-bitch-project/app/assets/images/logo-white.svg" alt="logo-white">
+            <h1>APLIKACJE I STRONY INTERNETOWE</h1>
+            <h2>dopasowane do twoich potrzeb</h2>
+        </div>
+    </header>
+    <div class="realization">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+    </div>
+    <div class="projects">
+        <div class="project-head"><h1>ZALETY NASZYCH PROJEKTÓW</h1></div>
+        <div class="project-blocks">
+            <div class="block-one"><h1>Responsywność</h1><p>Wszystkie przygotowywane przez nas projekty są resposnywne, co oznacza, że wyświetlają się prawidłowo na różnych typach urządzeń, takich jak: komputer, tablet czy smartfon.</p></div>
+            <div class="block-two"><h1>Optymalizacja SEO</h1><p>Wiemy jak właściwie zbudować stronę internetową, aby była dobrze widoczna dla robotów Google oraz w innych wyszukiwarkach. Dzięki temu strona będzie pojawiała się wyżej w wynikach wyszukiwania.</p></div>
+            <div class="block-three"><h1>Konwersja = zysk</h1><p>Wiemy jak przyciągnąć uwagę klienta, aby zainteresował się Twoją ofertą i zadzwonił, dokonał zamówienia lub napisał do Twojej firmy. Jest to możliwe dzięki zastosowaniu odpowiednich technik oraz korzystaniu z narzędzi analizy statystyk, takich jak Google Analytics.</p></div>
+            <div class="block-four"><h1>Łatwe zarządzanie</h1><p>Do edycji i zarządzania stroną korzystamy, w zależności od Twoich potrzeb, z autorskiego systemu CMS, Wordpressa lub innego w zależności od potrzeby, które są zarówno przyjazne jak i proste w obsłudze dla użytkownika</p></div>
+        </div>
+    </div>
+    <div class="wycena">
+        <div class="tekst">
+        <h1>Darmowa wycena nowej strony internetowej!</h1>
+        <p>Zainwestuj w responsywną stronę internetową - niech strona Twojej firmy wyświetla się prawidłowo na wszystkich urządzeniach.</p></div>
+        <a href="#contact">BEZPŁATNA WYCENA</a>
+    </div>
+</body>
+</html>
