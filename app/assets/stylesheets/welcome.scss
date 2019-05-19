@@ -29,6 +29,10 @@ nav {
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(255,166,0,1) 30%, rgba(255,166,0,1) 100%);
     height: 10vh;
     flex-basis: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 header {
@@ -40,6 +44,7 @@ header {
     background-image: url(/app/assets/images/header-foto.jpg);
     background-size: cover;
     background-position: center;
+    margin-top: 10vh;
 }
 
 .header-wrapper {
