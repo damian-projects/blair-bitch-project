@@ -30,12 +30,16 @@
       </header>
       <section>
           <div class="buttons">
-              <a href="#">ZNAJDZ POJAZD</a>
-              <a href="#">SPRZEDAJ POJAZD</a>
+                <div class="button-style">
+                    <a href="#"><span>EXTRA</span></a>
+                    <a href="#"><span>ZNAJDZ POJAZD</span></a>
+                    <a href="#"><span>SPRZEDAJ POJAZD<span></a>
+                </div>
           </div>
           <div class="announcement">
-              Ogloszenia
-              <%= link_to 'Ogloszenia', controller: 'announcements' %>
+              <span><%= link_to 'Ogloszenia', controller: 'announcements' %></span>
+              <span><%= link_to 'Ogloszenia', controller: 'announcements' %></span>
+              <span><%= link_to 'Ogloszenia', controller: 'announcements' %></span>
           </div>
       </section>
       <footer>

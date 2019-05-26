@@ -5,13 +5,21 @@
 * {
     margin: 0;
     padding: 0;
+
+    // NAVBAR - HEADER TOP VALUE
+    --top-height: 10vh;
 }
 
-/* UKLAD STRONY */
+    
+
+
+    /* PAGE LAYOUT - START */
+
 body {
     height: 100vh;
     width: 100vw;
     background-color: #ccc;
+    min-width: 400px;
 }
 
 .container {
@@ -27,7 +35,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(120deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 30%, rgba(255,166,0,1) 30%, rgba(255,166,0,1) 100%);
-    height: 10vh;
+    height: var(--top-height);
     flex-basis: 100%;
     position: fixed;
     left: 0;
@@ -44,7 +52,7 @@ header {
     background-image: asset_url("header-foto.jpg");
     background-size: cover;
     background-position: center;
-    margin-top: 10vh;
+    margin-top: var(--top-height);
 }
 
 .header-wrapper {
@@ -72,10 +80,14 @@ footer {
     display: flex;
     flex-basis: 100%;
     height: 10vh;
-    background-color: #999ccc;
+    background-color: darkgray;
     justify-content: center;
+    align-items: center;
 }
-/* UKLAD STRONY */
+
+    /* PAGE LAYOUT - END*/
+
+    // NAVIGATION MENU - START
 
 .logo {
     margin-left: 20px;
@@ -88,6 +100,12 @@ footer {
     margin-right: 20px;
 }
 
+#hamburger-menu-icon {
+    height: 3rem;
+}
+
+    // NAVIGATION MENU - END
+
 .header-text {
     position: absolute;
     bottom: 30px;
@@ -96,6 +114,14 @@ footer {
     z-index: 1;
     color: white;
 }
+
+.header-text h2 {
+    font-size: 26px;
+    // line-height: 24px;
+    opacity: 1;
+}
+
+    // BUTTONS - START
 
 .buttons {
     display: flex;
@@ -107,17 +133,80 @@ footer {
     height: 50vh;
 }
 
-.buttons a {
+.button-style {
     display: flex;
-    flex-basis: 51%;
+    flex-direction: column;
+    height: 75%;
+    justify-content: space-around;
+}
+
+.button-style a {
+    display: flex;
     justify-content: center;
+    border: 2px solid black;
     background-color: black;
+    transform: skew(-30deg);
     color: white;
     font-size: 42px;
     text-decoration: none;
     padding: 12px;
+    height: 42px;
+    transition: .3s;
+    span {
+        transform: skew(30deg);
+    }
+}
+.button-style>:nth-child(1) {
+    justify-content: center;
+    border: 2px solid rgba(255,166,0,1);
+    background-color: rgba(255,166,0,1);
+    transform: skew(30deg);
+    color: black;
+    font-size: 42px;
+    text-decoration: none;
+    padding: 12px;
+    height: 42px;
+    span {
+        transform: skew(-30deg);
+    }
 }
 
-#hamburger-menu-icon {
-    height: 3rem;
+.button-style a:hover {
+    color: rgba(255,166,0,1);
+
 }
+
+
+    // BUTTONS - END
+
+    // ANNOUNCEMENTS - START
+
+.announcement {
+    display: flex;
+    flex-basis: 100%;
+    text-transform: uppercase;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 50vh;
+    span {
+        border: 2px solid #434343;
+        padding: 40px 100px;
+        font-size: 42px;
+        transition: .3s;
+        a {
+            text-decoration: none;
+            color: black;
+        }
+        
+    }
+}
+
+.announcement span:hover {
+    background-color: #434343;
+    a {
+        color: white;
+    }
+}
+
+    // ANNOUNCEMENTS - END
