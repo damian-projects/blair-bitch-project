@@ -44,6 +44,8 @@ end
 
  private
   def announcement_params
-    params.require(:announcement).permit(:car, :description)
+    params.require(:announcement).permit(:car, :description, :date,
+      :price, :location, :year, :mileage, :engine,
+      :fuel, :power, :condition)
   end
 end

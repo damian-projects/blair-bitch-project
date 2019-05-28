@@ -8,5 +8,45 @@
   <%= @announcement.description %>
 </p>
 
+<p>
+  <strong>Cena:</strong>
+  <%= @announcement.price %>
+</p>
+
+<p>
+  <strong>Lokalizacja:</strong>
+  <%= @announcement.location %>
+</p>
+
+<p>
+  <strong>Rocznik:</strong>
+  <%= @announcement.year %>
+</p>
+
+<p>
+  <strong>Przebieg:</strong>
+  <%= @announcement.mileage %>
+</p>
+
+<p>
+  <strong>Pojemność:</strong>
+  <%= @announcement.engine %>
+</p>
+
+<p>
+  <strong>Paliwo:</strong>
+  <%= @announcement.fuel %>
+</p>
+
+<p>
+  <strong>Moc:</strong>
+  <%= @announcement.power %>
+</p>
+
+<p>
+  <strong>Stan:</strong>
+  <%= @announcement.condition %>
+</p>
+
 <%= link_to 'Edytuj', edit_announcement_path(@announcement) %> |
 <%= link_to 'Wróć', announcements_path %>

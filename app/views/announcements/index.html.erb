@@ -6,6 +6,14 @@
   <tr>
     <th>Auto</th>
     <th>Opis</th>
+    <th>Cena</th>
+    <th>Lokalizacja</th>
+    <th>Rocznik</th>
+    <th>Przebieg</th>
+    <th>Pojemność</th>
+    <th>Paliwo</th>
+    <th>Moc</th>
+    <th>Stan</th>
     <th></th>
   </tr>
 
@@ -13,6 +21,15 @@
     <tr>
       <td><%= announcement.car %></td>
       <td><%= announcement.description %></td>
+      <td><%= announcement.price %></td>
+      <td><%= announcement.location %></td>
+      <td><%= announcement.year %></td>
+      <td><%= announcement.mileage %></td>
+      <td><%= announcement.engine %></td>
+      <td><%= announcement.fuel %></td>
+      <td><%= announcement.power %></td>
+      <td><%= announcement.condition %></td>
+
       <td><%= link_to 'Pokaż', announcement_path(announcement) %></td>
       <td><%= link_to 'Edytuj', edit_announcement_path(announcement) %></td>
       <td><%= link_to 'Usuń', announcement_path(announcement),

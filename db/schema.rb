@@ -10,13 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_05_19_161028) do
+ActiveRecord::Schema.define(version: 2019_05_28_132841) do
 
-  create_table "announcements", force: :cascade do |t|
-    t.string "car"
-    t.text "description"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+# Could not dump table "announcements" because of following StandardError
+#   Unknown type 'bool' for column 'condition'
 
 end
